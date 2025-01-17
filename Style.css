@@ -1,0 +1,118 @@
+button {
+    float: right;
+    /*background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);*/
+    background-image: linear-gradient(92.88deg, #463b83 , #5772b1 , #3dc3ee );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    /*removed: 
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
+    font-family: 'Chakra Petch'; /*added*/
+    font-size: 16px;
+    font-weight: 500;
+    height: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    transition: all 1.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 2px;
+}
+
+button:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+
+@media (min-width: 768px) {
+    button {
+      padding: .2rem 1.6rem;
+    }
+}
+
+
+body {
+    background-color: black;
+    color: #FFFFFF; /*added*/
+    font-family: 'Chakra Petch'; /*added*/
+}
+
+
+/*added stuff below*/
+
+header {
+    background-image: linear-gradient(92.88deg, #463b83 , #5772b1 , #3dc3ee );
+    color: #FFFFFF;
+    font-family: 'Chakra Petch'; 
+    text-align: center;
+    font-size: 80px;
+    font-weight: 1000;
+    padding: 30px;
+}
+
+.levels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.levelPic{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+img{
+    padding-bottom: 20px;
+    width: 23vw;
+    height: 23vw;
+    cursor: pointer; 
+}
+
+.logo{
+    float: left;
+    width: 125px;
+    height: 75px;
+    cursor: default;
+}
+
+
+iframe{
+    display:block;
+    margin: auto;
+}
+
+
+object{
+    color: #FFFFFF; /*added*/
+    font-family: 'Chakra Petch'; /*added*/
+}
+
+  
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    background-color: #463b83;
+    opacity: 0.9;
+    color: #fff;
+    z-index:9999;
+    position: fixed;
+    top:15vw;
+    bottom: 15vw;
+    left: 20vw;
+    right: 20vw;
+    margin: auto;
+  }
+  
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+  }
