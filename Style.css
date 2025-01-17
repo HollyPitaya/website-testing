@@ -38,6 +38,7 @@ button:hover {
 
 
 body {
+    width: 100%;
     background-color: black;
     color: #FFFFFF; /*added*/
     font-family: 'Chakra Petch'; /*added*/
