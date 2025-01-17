@@ -36,6 +36,14 @@ button:hover {
     }
 }
 
+@media (max-width: 768px) {
+    button {
+      width: 25%;
+        height: 12%;
+    }
+}
+
+
 
 
 
